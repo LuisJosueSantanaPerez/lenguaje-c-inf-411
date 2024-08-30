@@ -7,19 +7,30 @@
 */
 #include <stdio.h>
 
-int main() {
+#include <stdio.h>
+#include <ctype.h>
 
+int main() {
     const int NUM_CALIFICACIONES = 10;
     float calificaciones[NUM_CALIFICACIONES];
-    float sumaCalificaciones = 0.0;
-    float promedioCalificaciones = 0.0;
-    int respuesta = 0;
+    float sumaCalificaciones;
+    float promedioCalificaciones;
+    int respuesta;
 
     do {
+        sumaCalificaciones = 0;
         printf("Ingrese las calificaciones de los estudiantes:\n");
         for(int i = 0; i < NUM_CALIFICACIONES; i++) {
-            printf("Calificacion #%d: ", i + 1);
-            scanf("%f", &calificaciones[i]);
+            int validInput = 0;
+            while (!validInput) {
+                printf("Calificacion #%d: ", i + 1);
+                if (scanf("%f", &calificaciones[i]) != 1) {
+                    printf("Entrada invalida. Por favor, ingrese un numero.\n");
+                    while (getchar() != '\n');
+                } else {
+                    validInput = 1;
+                }
+            }
             sumaCalificaciones += calificaciones[i];
         }
 
