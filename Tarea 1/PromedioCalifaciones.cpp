@@ -19,7 +19,7 @@ int main() {
 
     do {
         sumaCalificaciones = 0;
-        printf("Ingrese las calificaciones de los estudiantes:\n");
+        printf("Ingrese las calificaciones del estudiante:\n");
         for(int i = 0; i < NUM_CALIFICACIONES; i++) {
             int validInput = 0;
             while (!validInput) {
