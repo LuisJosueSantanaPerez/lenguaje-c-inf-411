@@ -3,42 +3,38 @@
 * Nombre: Luis Josue Santana Perez
 * Matricula: 100218446
 * Fecha: 29/8/2024
-* Programa que calcula la cantidad de numeros positivos, negativos, pares e impares
+* Programa que calcula la cantidad de numeros positivos, negativos, pares e impares del 1 al 1000
 */
 
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-    int numero = 0;
+int main() {
     int positivos = 0;
     int negativos = 0;
     int pares = 0;
     int impares = 0;
+    int i = 1;
 
-    int i = 0;
     do {
-        printf("Ingrese un numero: ");
-        scanf("%d", &numero);
-
-        if(numero > 0){
+        if (i > 0) {
             positivos++;
-        } else if(numero < 0){
+        } else if (i < 0) {
             negativos++;
         }
 
-        if(numero % 2 == 0){
+        if (i % 2 == 0) {
             pares++;
         } else {
             impares++;
         }
 
         i++;
-    } while(i < 10);
+    } while (i <= 1000);
 
-    printf("Numeros positivos: %d\n", positivos);
-    printf("Numeros negativos: %d\n", negativos);
-    printf("Numeros pares: %d\n", pares);
-    printf("Numeros impares: %d\n", impares);
+    printf("Cantidad de numeros positivos: %d\n", positivos);
+    printf("Cantidad de numeros negativos: %d\n", negativos);
+    printf("Cantidad de numeros pares: %d\n", pares);
+    printf("Cantidad de numeros impares: %d\n", impares);
 
     return 0;
 }
