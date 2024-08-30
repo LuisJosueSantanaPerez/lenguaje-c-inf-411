@@ -7,9 +7,6 @@
 */
 #include <stdio.h>
 
-#include <stdio.h>
-#include <ctype.h>
-
 int main() {
     const int NUM_CALIFICACIONES = 10;
     float calificaciones[NUM_CALIFICACIONES];
