@@ -1,3 +1,10 @@
+/*
+* Curso: INF-411
+* Nombre: Luis Josue Santana Perez
+* Matricula: 100218446
+* Fecha: 24/8/2024
+* Programa que calcula el promedio de las calificaciones de 10 estudiantes
+*/
 #include <stdio.h>
 
 int main() {
