@@ -1,3 +1,11 @@
+/*
+* Curso: INF-411
+* Nombre: Luis Josue Santana Perez
+* Matricula: 100218446
+* Fecha: 24/8/2024
+* Programa que calcula las horas trabajadas y el sueldo neto de un empleado
+*/
+
 #include <stdio.h>
 
 int main() {
