@@ -38,8 +38,8 @@ int main() {
     interesDiario = montoPrestamo * tasaDiaria;
     interesMensual = interesDiario * 31;
 
-    printf("Interes diario generado: %.2lf\n", interesDiario);
-    printf("Interes mensual generado (31 dias): %.2lf\n", interesMensual);
+    printf("Interes diario generado: RD$ %.2lf\n", interesDiario);
+    printf("Interes mensual generado (31 dias): RD$%.2lf\n", interesMensual);
 
     return 0;
 }
