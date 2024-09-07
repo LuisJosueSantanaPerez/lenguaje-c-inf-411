@@ -3,7 +3,8 @@
  * Nombre: Luis Josue Santana Perez
  * Matricula: 100218446
  * Fecha: 6/9/2024
- * Programa que calcula la taza del dia de pesos Dominicano a Dollar
+ * Programa  que lea los minutos de una llamada entero
+ * y el tipo de llamada (local o internacional) y calcule el monto a cobrar.
  */
 
 #include <stdio.h>
