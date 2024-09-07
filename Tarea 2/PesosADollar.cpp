@@ -2,7 +2,7 @@
  * Curso: INF-411
  * Nombre: Luis Josue Santana Perez
  * Matricula: 100218446
- * Fecha: 24/8/2024
+ * Fecha: 6/9/2024
  * Programa que calcula la taza del dia de pesos Dominicano a Dollar
  */
 
