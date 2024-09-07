@@ -9,18 +9,34 @@
 
 #include <stdio.h>
 
-int main(){
+int main()
+{
     int numero = 0;
     int sumaPares = 0;
     int sumaImpares = 0;
 
-    printf("Ingrese un numero: ");
-    scanf("%d", &numero);
+    while (true)
+    {
+        printf("Ingrese un numero: ");
+        if (scanf("%d", &numero) == 1)
+        {
+            break;
+        }
+        else
+        {
+            printf("Error al leer el numero. Por favor, intente de nuevo.\n");
+            while (getchar() != '\n');
+        }
+    }
 
-    for (int i = 1; i <= numero; i++){
-        if (i % 2 == 0){
+    for (int i = 1; i <= numero; i++)
+    {
+        if (i % 2 == 0)
+        {
             sumaPares += i;
-        } else {
+        }
+        else
+        {
             sumaImpares += i;
         }
     }
@@ -30,4 +46,3 @@ int main(){
 
     return 0;
 }
-
